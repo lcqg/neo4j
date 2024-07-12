@@ -1,0 +1,33 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+  application:
+    name: 'springboot2_neo4j'
+  data:
+    neo4j:
+      #uri: bolt://localhost:17687
+      uri: bolt://localhost:7687
+      username: 'neo4j'
+      #password: 0123456789
+      password: 'xiongbo99'
+  binlog4j:
+    redis-config:
+      host: 127.0.0.1
+      port: 6379
+      password: taoren@123
+    client-configs:
+      master:
+        inaugural: false
+        mode: standalone
+        persistence: false #是否启用持久化, 默认为 false
+        username: root
+        strict: true
+        password: Sz2PVrZQd8t#r
+        host: 192.168.3.254
+        port: 13306
+        serverId: 1990
+        time-offset: 0
+server:
+  port: 8083
